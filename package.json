@@ -1,0 +1,54 @@
+{
+  "name": "react-range-master",
+  "version": "0.0.1",
+  "description": "A robust, highly-configurable range input for React",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "build": "./util/build.sh commonjs",
+    "bundle": "./util/build.sh bundle",
+    "build-all": "./util/build.sh",
+    "prepublish": "npm run build-all",
+    "watch-build": "npm run build && echo 'Watching for changes...' && watch-run -p './src/**.js' npm run build",
+    "watch-bundle": "npm run bundle && echo 'Watching for changes...' && watch-run -p './src/**.js' npm run bundle",
+    "watch-all": "npm run build-all && echo 'Watching for changes...' && watch-run -p './src/**.js' npm run build-all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-beltran/react-range-master.git"
+  },
+  "keywords": [
+    "react",
+    "range",
+    "input",
+    "slider"
+  ],
+  "author": "Jacob Beltran <hello@jacobbeltran.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacob-beltran/react-range-master/issues"
+  },
+  "homepage": "https://github.com/jacob-beltran/react-range-master#readme",
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "dependencies": {
+    "js-shortid": "^0.1.1",
+    "radium": "^0.17.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "rollup": "^0.26.3",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-commonjs": "^2.2.1",
+    "rollup-plugin-node-resolve": "^1.5.0",
+    "rollup-plugin-uglify": "^0.3.1",
+    "watch-run": "^1.2.4"
+  }
+}
